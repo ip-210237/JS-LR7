@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-size: 1.1em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main, main>*, .item, .item-list {
+  width: 640px;
+
+  margin: .5em auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+button {
+  text-transform: uppercase;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+/* New Item */
+.new-item {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+label {
+  width: 2.5em;
+  margin-right: 1em;
+
+  color: rgb(0, 0, 182);
+
+  word-wrap: break-word;
+}
+
+.new-item-input, .new-item-add {
+  padding: .25em;
+  background: none;
+  
+  border: none;
+  border-radius: 0;
+  border: 3px solid rgb(0, 0, 182);
+  outline: none;
+}
+
+.new-item-input {  
+  width: inherit;
+  border-right: none;
+}
+
+/* Item List */
+.item {
+  margin: .25em auto;
+  padding: 0 .1em;
+  background: none;
+  
+  border: none;
+  border-radius: 0;
+  border: 3px solid rgb(0, 0, 182);
+  outline: none;
+
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-delete {
+  padding: .25em;
+  background: none;
+  
+  border: none;
+  border-radius: 0;
+}
+
+/* Download */
+.download {
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.download-button {
+  padding: .25em;
+  background: none;
+  
+  border: none;
+  border-radius: 0;
+  border: 3px solid rgb(0, 0, 182);
+  outline: none;
+}

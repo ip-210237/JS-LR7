@@ -1,0 +1,84 @@
+* {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+body{
+  width: 40%;
+  max-width: 400px;
+  margin: 30px auto 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  margin: 5px;
+  display: inherit;
+  flex-direction: row;
+  justify-content: stretch;
+}
+
+.new-item-row{
+  color: darkblue;
+}
+
+.textbox {
+  width: 100%;
+  border: 2px solid darkblue;
+  border-right: 0px;
+}
+
+.btn {
+  background-color: #ffffff;
+  border: 2px solid darkblue;
+  cursor: pointer;
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+.content-container{
+  width: 100%;
+}
+
+.item-box {
+  margin-top: 5px;
+  border: 1px solid;    
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid darkblue;
+}
+
+.item-box > div {
+  margin: 5px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 150px;
+  flex-basis: 90%;
+}
+
+.item-box > .btnRemove {           
+  cursor: pointer;
+  font-weight: 800;
+  flex-basis: 10%;
+}
+
+.item-box > .btnRemove:hover {
+  color: blue;
+}
+
+.item-box > .btnRemove:active {
+  color: brown;
+}
+
+.proto {
+  display: none;
+}
+
+.bottom-panel {
+  justify-content: flex-end;
+}
